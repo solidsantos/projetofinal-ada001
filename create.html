@@ -11,9 +11,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Victor+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <style type="text/css">
+        main>section>form>div>label {
+            color: #a6f750;
+            font-weight: 600;
+        }
+
+        #crud-form {
+            padding: 75px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 600px) {
+            #crud-form {
+                padding: 35px;
+                border-radius: 10px;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
@@ -58,9 +77,39 @@
         </div>
     </header>
     <main>
-        
+        <section class>
+            <form id="crud-form" class="bg-dark">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Data</label>
+                    <input type="date" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="john@jgraph.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Sexo</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecione</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outro</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-end mb-3">
+                    <button class="btn btn-danger mx-3" type="button"
+                        onclick="window.location.href='./index.html'">Cancelar</button>
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
     </main>
-    <footer id="footer" class="py-3" style="position: absolute; bottom: 0; background-color: #3f3e44; width: 100%;">
+    <footer id="footer" class="py-3 mt-auto" style="background-color: #3f3e44;">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
