@@ -1,0 +1,102 @@
+* {
+    font-family: 'Ubuntu', monospace;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #0f1216;
+}
+
+main {
+    padding: 75px 140px;
+}
+
+.nav-link,
+footer>p {
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.sec {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#h1_title {
+    color: #ffffff;
+    flex: 3;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+td>a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+
+.nav:not(:first-child) {
+    background-color: #051923;
+}
+
+.btn-primary{
+    background-color: #a6f750;
+    color: #0f1216;
+    border-style: none;
+}
+
+.btn-primary:hover{
+    background-color: #6da234;
+    color: #272a2d;
+}
+
+#nav-list-phone{
+    display: none;
+}
+
+.nav-link:hover{
+    color: #a6f750;
+}
+
+
+@media (max-width: 600px) {
+    .sec {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 75px 16px;
+    }
+
+    .col-email {
+        display: none;
+    }
+
+    #nav-form {
+        margin: 25px 0;
+    }
+    #nav-list-desktop{
+        display: none;
+    }
+    #nav-list-phone{
+        display: block;
+    }
+
+}

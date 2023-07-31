@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Victor+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" alt="logo.svg"
+                        src="https://lms-ada-assets.s3.sa-east-1.amazonaws.com/logo_text.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="justify-content: flex-end;" class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form id="nav-form" class="d-flex" role="search">
+                        <input style="border-bottom-right-radius: 0px; border-top-right-radius: 0px;"
+                            class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-primary" type="submit"
+                            style="border-bottom-left-radius: 0px; border-top-left-radius: 0px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                    <ul id="nav-list-phone" class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Lorem Ipsum</a>
+                            <a class="nav-link active" aria-current="page" href="#">Lorem Ipsum</a>
+                            <a class="nav-link active" aria-current="page" href="#">Lorem Ipsum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="nav-list-desktop">
+            <ul class="nav justify-content-center mt-3 mx-3 bg-dark p-1">
+                <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="sec">
+            <span id="h1_title">
+                <h1>Cadastro de Clientes</h1>
+            </span>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='./create.html'">
+                Adicionar
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-plus-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+            </button>
+        </section>
+        <section class="table-responsive">
+            <table class="table table-dark rounded rounded-3 overflow-hidden table-bordered table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Data Nascimento</th>
+                        <th class="col-email" scope="col">E-mail</th>
+                        <th colspan="2" scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Peter Parker</td>
+                        <td>11/09/2000</td>
+                        <td class="col-email">peterparker@gmail.com</td>
+                        <td>
+                            <a href="#" style="color: #a6f750;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                                </svg>
+                                Editar
+                            </a>
+
+                        </td>
+                        <td>
+                            <a href="#" style="color: #a6f750">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                Excluir
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="footer" class="py-3" style="position: absolute; bottom: 0; background-color: #3f3e44; width: 100%;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+        </ul>
+        <p class="text-center">© 2023 Victor Santos</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
