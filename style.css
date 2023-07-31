@@ -1,24 +1,17 @@
-/* Global Styles */
 * {
     font-family: 'Ubuntu', monospace;
+
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: #0f1216;
 }
 
-/* Main Content */
 main {
     padding: 75px 140px;
-}
-
-/* Navigation and Footer */
-.nav:not(:first-child) {
-    background-color: #051923;
 }
 
 .nav-link,
@@ -30,7 +23,6 @@ footer>p {
     color: #fff;
 }
 
-/* Section Styles */
 .sec {
     display: flex;
     flex-direction: row;
@@ -48,7 +40,6 @@ h1 {
     flex: 3;
 }
 
-/* Table Styles */
 th,
 td {
     text-align: center;
@@ -61,51 +52,30 @@ td>a {
     align-items: center;
 }
 
-/* Button Styles */
-.btn-primary {
+.nav:not(:first-child) {
+    background-color: #051923;
+}
+
+.btn-primary{
     background-color: #a6f750;
     color: #0f1216;
     border-style: none;
 }
 
-.btn-primary:hover {
+.btn-primary:hover{
     background-color: #6da234;
     color: #272a2d;
 }
 
-/* Navigation Styles for Mobile */
-#nav-list-phone {
+#nav-list-phone{
     display: none;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: #a6f750;
 }
 
-/* Footer Styles */
-#footer {
-    position: absolute;
-    bottom: 0;
-    background-color: #3f3e44;
-    width: 100%;
-}
 
-/* Form Customization */
-#form-custom {
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-}
-
-#form-button {
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-}
-
-td > a {
-    color: #a6f750;
-}
-
-/* Media Query for Mobile */
 @media (max-width: 600px) {
     .sec {
         flex-direction: column;
@@ -122,12 +92,11 @@ td > a {
     #nav-form {
         margin: 25px 0;
     }
-
-    #nav-list-desktop {
+    #nav-list-desktop{
         display: none;
     }
-
-    #nav-list-phone {
+    #nav-list-phone{
         display: block;
     }
+
 }
