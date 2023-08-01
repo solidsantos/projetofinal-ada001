@@ -24,7 +24,7 @@ footer>p {
     color: #fff;
 }
 
-.sec {
+.main-table {
     display: flex;
     flex-direction: row;
     padding-bottom: 25px;
@@ -111,7 +111,7 @@ td>a {
         border-radius: 10px;
     }
 
-    .sec {
+    .main-table {
         flex-direction: column;
     }
 
