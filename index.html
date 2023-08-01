@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
+    <title>Início</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Victor+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -26,12 +28,11 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div style="justify-content: flex-end;" class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="justify-content-end navbar-collapse" id="navbarSupportedContent">
                     <form id="nav-form" class="d-flex" role="search">
-                        <input style="border-bottom-right-radius: 0px; border-top-right-radius: 0px;"
-                            class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button class="btn btn-primary" type="submit"
-                            style="border-bottom-left-radius: 0px; border-top-left-radius: 0px;">
+                        <input id="nav-input" class="form-control" type="search" placeholder="Pesquisar"
+                            aria-label="Search">
+                        <button id="nav-btn" class="btn btn-primary" type="submit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -41,9 +42,9 @@
                     </form>
                     <ul id="nav-list-phone" class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Lorem Ipsum</a>
-                            <a class="nav-link active" aria-current="page" href="#">Lorem Ipsum</a>
-                            <a class="nav-link active" aria-current="page" href="#">Lorem Ipsum</a>
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -51,9 +52,9 @@
         </nav>
         <div id="nav-list-desktop">
             <ul class="nav justify-content-center mt-3 mx-3 bg-dark p-1">
-                <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -62,7 +63,7 @@
             <span id="h1_title">
                 <h1>Cadastro de Clientes</h1>
             </span>
-            <button type="button" class="btn btn-primary" onclick="window.location.href='./create.html'">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='./edit.html'">
                 Adicionar
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle" viewBox="0 0 16 16">
@@ -87,26 +88,18 @@
                     <tr>
                         <th scope="row">001</th>
                         <td>João Silva</td>
-                        <td>15/03/1985	</td>
+                        <td>15/03/1985 </td>
                         <td class="col-email">joao.silva@example.com</td>
                         <td>
-                            <a href="#" style="color: #a6f750;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-pencil" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-                                </svg>
+                            <a href="#" id="a-crud">
+                                <i class="bi bi-pencil"></i>
                                 Editar
                             </a>
 
                         </td>
                         <td>
-                            <a href="#" style="color: #a6f750">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-x" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
+                            <a id="a-crud" href="#" data-bs-toggle="modal" data-bs-target="#delete">
+                                <i class="bi bi-x"></i>
                                 Excluir
                             </a>
                         </td>
@@ -117,23 +110,15 @@
                         <td>22/08/1990</td>
                         <td class="col-email">maria.santos@example.com</td>
                         <td>
-                            <a href="#" style="color: #a6f750;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-pencil" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-                                </svg>
+                            <a id="a-crud" href="#" id="a-crud">
+                                <i class="bi bi-pencil"></i>
                                 Editar
                             </a>
 
                         </td>
                         <td>
-                            <a href="#" style="color: #a6f750">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-x" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
+                            <a id="a-crud" data-bs-toggle="modal" data-bs-target="#delete" href="#">
+                                <i class="bi bi-x"></i>
                                 Excluir
                             </a>
                         </td>
@@ -144,23 +129,15 @@
                         <td>05/11/1982</td>
                         <td class="col-email">pedro.oliveira@example.com</td>
                         <td>
-                            <a href="#" style="color: #a6f750;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-pencil" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-                                </svg>
+                            <a href="#" id="a-crud">
+                                <i class="bi bi-pencil"></i>
                                 Editar
                             </a>
 
                         </td>
                         <td>
-                            <a href="#" style="color: #a6f750">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-x" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
+                            <a id="a-crud" data-bs-toggle="modal" data-bs-target="#delete" href="#">
+                                <i class="bi bi-x"></i>
                                 Excluir
                             </a>
                         </td>
@@ -171,23 +148,15 @@
                         <td>12/06/1995</td>
                         <td class="col-email">ana.pereira@example.com</td>
                         <td>
-                            <a href="#" style="color: #a6f750;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-pencil" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-                                </svg>
+                            <a href="#" id="a-crud">
+                                <i class="bi bi-pencil"></i>
                                 Editar
                             </a>
 
                         </td>
                         <td>
-                            <a href="#" style="color: #a6f750">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-x" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
+                            <a id="a-crud" data-bs-toggle="modal" data-bs-target="#delete" href="#">
+                                <i class="bi bi-x"></i>
                                 Excluir
                             </a>
                         </td>
@@ -195,12 +164,32 @@
                 </tbody>
             </table>
         </section>
+        <!-- Modal Delete -->
+        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Excluir Cliente</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Deseja realmente excluir o cliente?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                        <button type="button" class="btn btn-primary">Sim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer id="footer" class="py-3 mt-auto" style="background-color: #3f3e44; bottom: 0;">
+    <footer id="footer" class="py-3 mt-auto">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Lorem Ipsum</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Contato</a></li>
         </ul>
         <p class="text-center">© 2023 Victor Santos</p>
     </footer>
