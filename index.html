@@ -28,11 +28,11 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="justify-content-end navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <form id="nav-form" class="d-flex" role="search">
                         <input id="nav-input" class="form-control" type="search" placeholder="Pesquisar"
                             aria-label="Search">
-                        <button id="nav-btn" class="btn btn-primary" type="submit">
+                        <button class="btn btn-primary" type="submit" id="nav-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
@@ -42,7 +42,7 @@
                     </form>
                     <ul id="nav-list-phone" class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
                             <a class="nav-link active" aria-current="page" href="#">Sobre</a>
                             <a class="nav-link active" aria-current="page" href="#">Contato</a>
                         </li>
@@ -52,11 +52,19 @@
         </nav>
         <div id="nav-list-desktop">
             <ul class="nav justify-content-center mt-3 mx-3 bg-dark p-1">
-                <li class="nav-item"><a href="#" class="nav-link px-2">Início</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2">Início</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2">Sobre</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2">Contato</a></li>
             </ul>
         </div>
+    </header>
+    <div id="nav-list-desktop">
+        <ul class="nav justify-content-center mt-3 mx-3 bg-dark p-1">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Contato</a></li>
+        </ul>
+    </div>
     </header>
     <main>
         <section class="sec">
